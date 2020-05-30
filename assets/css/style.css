@@ -1,0 +1,52 @@
+.bgAccueil {
+
+    background-image: url(../img/bgAccueil.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 100px;
+    padding-bottom: 400px;
+    width: 100%;
+    height: 15%;
+
+}
+
+.titleAccueil {
+    
+    font-size: 170px;
+    text-shadow: 7px 7px #8C3725;
+    font-family: georgia, serif ;
+    font-style: inherit;
+
+}
+
+.footerCustom {
+
+    width: 100%;
+    height: 4%;
+    background-color: #CF3C1E;
+    -webkit-box-shadow: inset 1px 0px 251px 65px rgba(61,36,61,0.57);
+    -moz-box-shadow: inset 1px 0px 251px 65px rgba(61,36,61,0.57);
+    box-shadow: inset 1px 0px 251px 65px rgba(61,36,61,0.57);
+
+}
+
+.listFooter {
+
+    font-family: system-ui;
+    font-size: 17px;
+    color: #72fcff;
+    margin: 2%;
+    position: relative;
+
+}
+
+.titleFooter {
+
+    font-size: 400%;
+    text-shadow: 4px 4px #676666;
+    position: relative;
+    font-family: Arial;
+    font-style: unset;
+
+
+}
