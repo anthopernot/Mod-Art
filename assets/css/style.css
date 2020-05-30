@@ -19,6 +19,19 @@
 
 }
 
+.subtitleAccueil {
+
+    font-size: 230%;
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+    text-shadow: 2px 2px 4px red, 0 0 1em black, 0 0 2em black;
+    font-family: georgia, serif ;
+    font-style: inherit;
+
+}
+
 .footerCustom {
 
     width: 100%;
@@ -33,7 +46,7 @@
 .listFooter {
 
     font-family: system-ui;
-    font-size: 17px;
+    font-size: 14px;
     color: #72fcff;
     margin: 2%;
     position: relative;
@@ -42,11 +55,24 @@
 
 .titleFooter {
 
-    font-size: 400%;
-    text-shadow: 4px 4px #676666;
-    position: relative;
-    font-family: Arial;
+    font-size: 70px;
+    text-shadow: 1px 1px 3px orangered, 0 0 0em black, 0 0 0.2em black;
+    /*text-shadow: 4px 4px #555454;*/
+    font-family: ui-rounded;
     font-style: unset;
 
+}
+
+.droppdownCustom {
+
+    padding-right: 90px;
+    padding-left: 20px;
+
+}
+
+.artDDCustom {
+
+    padding-right: 80px;
+    padding-left: 150px;
 
 }

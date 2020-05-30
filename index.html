@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/405a7a03eb.js" crossorigin="anonymous"></script>
-    <title>Accueil - Mod'Art</title>
+    <title> Accueil - Mod'Art</title>
 </head>
 <body>
 
@@ -23,15 +23,27 @@
                 <li class="nav-item">
                     <a class="nav-link text-danger" href="#"> <i class="fas fa-portrait"></i> Nous connaître</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#"> <i class="fas fa-cut"></i> Notre savoir-faire</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-tshirt"></i> Vos créations
+                        <i class="fas fa-tshirt"></i> Votre création
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-menu droppdownCustom" aria-labelledby="navbarDropdown">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="assets/img/create1.jpg">
+                            </div>
+                            <div class="col-2 artDDCustom mt-4">
+                                <a class="dropdown-item" href="#">Mesuration</a>
+                                <a class="dropdown-item" href="#">Couleur</a>
+                                <a class="dropdown-item" href="#">Motif</a>
+                                <a class="dropdown-item" href="#">Forme du vêtement</a>
+                                <a class="dropdown-item" href="#">Choix de la matière</a>
+                            </div>
+                        </div>
+
                     </div>
                 </li>
             </ul>
@@ -46,6 +58,7 @@
                     <a class="nav-link border-secondary text-danger mr-2" href="#"><i class="fas fa-shopping-bag fa-lg"></i> Panier</a>
                 </li>
                 <li class="nav-item dropdown mr-3">
+
                         <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user-circle fa-lg text-danger"></i> Compte
                         </a>
@@ -54,6 +67,7 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt text-danger mr-2"></i> Déconnexion</a>
                         </div>
+
                 </li>
             </ul>
         </div>
@@ -71,18 +85,51 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="mx-auto">
+                    <h6 class="text-white text-xl-center subtitleAccueil">
+                        Avec Mod'Art, finis les essayages interminables en magasin ! Créez votre vêtement, votre oeuvre d'art
+                    </h6>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mx-auto">
+                    <button type="button" class="btn btn-info btn-lg shadow-lg p-3">Concevez votre vêtement maintenant !</button>
+                </div>
+            </div>
+
         </div>
 
         <div class="row">
 
             <div class="col-sm-10 mx-auto">
 
-                <div class="jumbotron">
-                    <h1 class="display-4">Hello, world!</h1>
-                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                    <hr class="my-4">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/vêtementsurmesure.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/surmesurebis.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/costume.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
 
             </div>
@@ -91,8 +138,22 @@
 
         <div class="footerCustom">
 
-            <div class="col-1 mx-auto p-0">
-                <p class="text-light titleFooter">Mod'Art</p>
+            <div class="col-12 pt-5">
+                <p class="text-light titleFooter text-center">Mod'Art</p>
+            </div>
+
+            <div class="row mx-auto">
+
+                <div class="col-12">
+
+                    <h2 class="listFooter text-center">
+                        <p class="text-light ml-5 mr-5"> Adresse mail : support@modart.com  </p>
+                        <p class="text-light ml-5 mr-5"> Numéro de téléphone : 03.83.69.45.21  </p>
+                        <p class="text-light ml-5 mr-5"> Adresse du siège social : 2 Boulevard Charlemagne, Nancy 54000  </p>
+                    </h2>
+
+                </div>
+
             </div>
 
             <div class="row mx-auto">
