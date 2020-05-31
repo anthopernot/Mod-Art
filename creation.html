@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://kit.fontawesome.com/405a7a03eb.js" crossorigin="anonymous"></script>
+        <title> Accueil - Mod'Art</title>
+    </head>
+    <body>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand ml-5 text-danger titleWebsite" href="index.html">Mod'Art</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-danger" href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="#"> <i class="fas fa-portrait"></i> Nous connaître</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="#"> <i class="fas fa-cut"></i> Notre savoir-faire</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-danger" href="creation.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-tshirt"></i> Votre création
+                            </a>
+                            <div class="dropdown-menu droppdownCustom" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="assets/img/create2.jpg">
+                                    </div>
+                                    <div class="col-2 artDDCustom mt-4">
+                                        <a class="dropdown-item" href="creation.html">Mensurations</a>
+                                        <a class="dropdown-item" href="creation.html">Couleur</a>
+                                        <a class="dropdown-item" href="creation.html">Motif</a>
+                                        <a class="dropdown-item" href="creation.html">Type du vêtement</a>
+                                        <a class="dropdown-item" href="creation.html">Forme du vêtement</a>
+                                        <a class="dropdown-item" href="creation.html">Choix de la matière</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-4">
+                        <li class="nav-item text-danger">
+                            <a class="nav-link border-secondary text-danger mr-2" href="#"><i class="fas fa-shopping-bag fa-lg"></i> Panier</a>
+                        </li>
+                        <li class="nav-item dropdown mr-3">
+
+                            <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user-circle fa-lg text-danger"></i> Compte
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#"><i class="fas fa-user text-danger mr-2"></i> Mon compte</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt text-danger mr-2"></i> Déconnexion</a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="bgArtList">
+
+                <div class="col-sm-10 mx-auto text-center pt-5">
+
+                    <h1 class="text-center text-danger display-3">Votre création</h1>
+
+                </div>
+
+                <div class="col-sm-12 mt-4 pb-4">
+
+                    <div class="barreHorizo mx-auto"></div>
+
+                </div>
+
+                <div class="container">
+
+                    <div class="row btn-danger p-3 m-3 shadow-lg rounded">
+
+                        <div class="col-sm-4 mx-auto text-center mt-3 titleArtList">
+
+                            <img src="assets/img/create2.jpg" class="img-thumbnail p-2 m-2">
+
+                        </div>
+
+                        <div class="col-sm-8 mx-auto text-center m-1">
+
+                            <div class="row btn-light ml-2 rounded">
+                                <div class="col-3 ">
+                                    <div class="nav flex-column nav-pills p-2 m-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab0" data-toggle="pill" href="#v-pills0" role="tab" aria-controls="v-pills0" aria-selected="false">Choix du vêtement</a>
+                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab1" data-toggle="pill" href="#v-pills1" role="tab" aria-controls="v-pills1" aria-selected="false">Type de vêtement</a>
+                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab2" data-toggle="pill" href="#v-pills2" role="tab" aria-controls="v-pills2" aria-selected="false">Forme du vêtement</a>
+                                        <a class="btn-outline-danger rounded m-2 p-2" id="v-pills-tab3" data-toggle="pill" href="#v-pills3" role="tab" aria-controls="v-pills3" aria-selected="true">Mensurations</a>
+                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab4" data-toggle="pill" href="#v-pills4" role="tab" aria-controls="v-pills4" aria-selected="false">Couleur</a>
+                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab5" data-toggle="pill" href="#v-pills5" role="tab" aria-controls="v-pills5" aria-selected="false">Motif</a>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="tab-content ml-5 p-2" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="v-pills0" role="tabpanel" aria-labelledby="v-pills0">
+                                            <div class="m-5">
+                                                <label class="h4">Choix du vêtement</label>
+                                                <select class="form-control mt-4" required>
+                                                    <option>Tee-shirt</option>
+                                                    <option>Costume</option>
+                                                    <option>Polo</option>
+                                                    <option>Sweetshirt</option>
+                                                    <option>Sweet à capuche</option>
+                                                    <option>Sweet avec zipette</option>
+                                                    <option>Veste</option>
+                                                    <option>Manteau</option>
+                                                    <option>Blouson</option>
+                                                    <option>Trench</option>
+                                                    <option>Pantalon</option>
+                                                    <option>Jean</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills1" role="tabpanel" aria-labelledby="v-pills1">
+                                            <div class="m-5">
+                                                <label class="h4">Type du vêtement</label>
+                                                <select class="form-control mt-4">
+                                                    <option>Bas de vêtement</option>
+                                                    <option>Costume</option>
+                                                    <option>Gant</option>
+                                                    <option>Haut de vêtement</option>
+                                                    <option>Vêtement une pièce</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills2" role="tabpanel" aria-labelledby="v-pills1">
+                                            <div class="m-5">
+                                                <label class="h4">Forme du vêtement</label>
+                                                <select class="form-control mt-4">
+                                                    <option>Je ne sais pas quoi mettre</option>
+                                                    <option>Ma foi</option>
+                                                    <option>Bonne journée à vous</option>
+                                                    <option>Prenez soin de vos proches</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills3" role="tabpanel" aria-labelledby="v-pills1">
+                                            <div class="m-5">
+                                                <label class="h4 mb-5">Mensurations</label>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 mr-3 col-form-label">Taille</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-control mt-4 mb-2">
+                                                            <option>XS</option>
+                                                            <option>S</option>
+                                                            <option>M</option>
+                                                            <option>L</option>
+                                                            <option>XL</option>
+                                                            <option>XXL</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="input1" class="col-sm-6 mr-3 col-form-label">Taille de hanche</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="number" class="form-control" id="input1">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="input2" class="col-sm-6 mr-3 col-form-label">Taille de jambe</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="number" class="form-control" id="input2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills4" role="tabpanel" aria-labelledby="v-pills1">
+                                            <div class="m-5">
+                                                <label class="h4">Couleur</label>
+                                                <select class="form-control mt-4">
+                                                    <option>Blanc</option>
+                                                    <option>Noir</option>
+                                                    <option>Rouge</option>
+                                                    <option>Bleu</option>
+                                                    <option>Vert</option>
+                                                    <option>Orange</option>
+                                                    <option>Rose</option>
+                                                    <option>Violet</option>
+                                                    <option>Beige</option>
+                                                    <option>Marron</option>
+                                                    <option>Turquoise</option>
+                                                    <option>Bordeaux</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills5" role="tabpanel" aria-labelledby="v-pills1">
+                                            <div class="m-5">
+                                                <label class="h4">Motif</label>
+                                                <select class="form-control mt-4">
+                                                    <option>Fleur</option>
+                                                    <option>Point</option>
+                                                    <option>Cercle</option>
+                                                    <option>Carré</option>
+                                                    <option>Rayure</option>
+                                                    <option>Jean-Marie Bigard</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-10 mx-auto text-center text-danger mt-5 mb-5">
+
+                    <p class="pt-3 pb-3 display-4"> Récapitulatif </p>
+
+                </div>
+
+                <div class="col-sm-12 mt-4 mb-5 pb-4">
+
+                    <div class="barreHorizo mx-auto"></div>
+
+                </div>
+
+                <div class="container">
+
+                    <div class="col-sm-12 mx-auto text-dark mt-5 mb-5">
+
+                        <p class="h4 mb-3"> Choix du vêtement :  </p>
+                        <p class="h4 mb-3"> Type du vêtement :  </p>
+                        <p class="h4 mb-3"> Forme du vêtement :  </p>
+                        <p class="h4 mb-3"> Mensurations :
+                        <li class="h5 ml-5 mb-4 mt-2"> Taille  :  </li>
+                        <li class="h5 ml-5 mb-4"> Taille de hanche :  </li>
+                        <li class="h5 ml-5 mb-2"> Taille de jambe :  </li>
+                        </p>
+                        <p class="h4 mb-3 mt-4=3"> Couleur du vêtement :  </p>
+                        <p class="h4 mb-3"> Motif apparaissant sur le vêtement :  </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-10 mx-auto text-center text-danger mt-5 mb-5">
+
+                    <p class="h2 pt-5 pb-5"> Si tout vous semble bon, vous pouvez poursuivre par l'ajout de votre création au panier </p>
+
+                </div>
+
+                <div class="col-sm-10 mx-auto text-center text-danger mt-5 mb-5">
+
+                    <button type="button" class="btn btn-danger btn-lg pr-5 pl-5 mb-5"><p class="pt-3 pb-3 h3"> Ajouter au panier </p></button>
+
+                </div>
+
+                <div class="col-sm-10 mx-auto">
+
+                </div>
+
+                <div class="footerCustom">
+
+                    <div class="col-12 pt-5">
+                        <p class="text-light titleFooter text-center">Mod'Art</p>
+                    </div>
+
+                    <div class="col-12 mx-auto">
+
+                        <h2 class="listFooter text-center">
+                            <p class="text-light ml-5 mr-5"> Adresse mail : support@modart.com  </p>
+                            <p class="text-light ml-5 mr-5"> Numéro de téléphone : 03.83.69.45.21  </p>
+                            <p class="text-light ml-5 mr-5"> Adresse du siège social : 2 Boulevard Charlemagne, Nancy 54000  </p>
+                        </h2>
+
+                    </div>
+
+                    <div class="col-12 mx-auto mt-5">
+
+                        <h2 class="listFooter text-center">
+                            <a href="#" class="text-light ml-5 mr-5"> FAQ </a>
+                            <a href="#" class="text-light ml-5 mr-5"> Mentions légales </a>
+                            <a href="#" class="text-light ml-5 mr-5"> Qui sommes-nous ? </a>
+                        </h2>
+
+                    </div>
+
+                    <div class="text-right p-4">
+                        <h2>
+                            <a href="#"><i class="fab fa-github text-light mr-0"></i></a>
+                            <a href="#"><i class="fab fa-linkedin text-light mr-2"></i></a>
+                            <h6><a href="https://getbootstrap.com/" class="text-light">Bootstrap 4.5</a></h6>
+                        </h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    </body>
+</html>
