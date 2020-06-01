@@ -99,15 +99,14 @@ h2 p {
 
 .droppdownCustom {
 
-    padding-right: 90px;
-    padding-left: 20px;
+    padding-right: 990px;
+    padding-left: 920px;
 
 }
 
 .artDDCustom {
 
-    padding-right: 80px;
-    padding-left: 150px;
+    padding-left: 2000px;
 
 }
 
@@ -116,6 +115,10 @@ h2 p {
     width: 100px;
     height: 450px;
 
+}
+
+.fontSmall {
+    font-size: 2px;
 }
 
 .indShadow {

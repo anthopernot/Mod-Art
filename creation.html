@@ -33,17 +33,19 @@
                                 <i class="fas fa-tshirt"></i> Votre création
                             </a>
                             <div class="dropdown-menu droppdownCustom" aria-labelledby="navbarDropdown">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="assets/img/create2.jpg">
+                                <div class="row p-3">
+                                    <div class="col">
+                                        <img class="pr-5" src="assets/img/create2.jpg">
                                     </div>
-                                    <div class="col-2 artDDCustom mt-4">
-                                        <a class="dropdown-item" href="creation.html">Mensurations</a>
-                                        <a class="dropdown-item" href="creation.html">Couleur</a>
-                                        <a class="dropdown-item" href="creation.html">Motif</a>
-                                        <a class="dropdown-item" href="creation.html">Type du vêtement</a>
-                                        <a class="dropdown-item" href="creation.html">Forme du vêtement</a>
-                                        <a class="dropdown-item" href="creation.html">Choix de la matière</a>
+                                    <div class="col-8 pl-5 pr-5 ml-5">
+                                        <div class="list-group list-group-flush">
+                                            <p class="fontSmall pl-5">Choix de la matière</p>
+                                            <p class="fontSmall ml-5">Type du vêtement</p>
+                                            <p class="fontSmall ml-5">Forme du vêtement</p>
+                                            <p class="fontSmall ml-5">Mensurations</p>
+                                            <p class="fontSmall ml-5">Couleur</>
+                                            <p class="fontSmall ml-5">Motif</p>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -100,8 +102,8 @@
                                 <div class="col-3 ">
                                     <div class="nav flex-column nav-pills p-2 m-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab0" data-toggle="pill" href="#v-pills0" role="tab" aria-controls="v-pills0" aria-selected="false">Choix du vêtement</a>
-                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab1" data-toggle="pill" href="#v-pills1" role="tab" aria-controls="v-pills1" aria-selected="false">Type de vêtement</a>
+                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab0" data-toggle="pill" href="#v-pills0" role="tab" aria-controls="v-pills0" aria-selected="false">Type de vêtement</a>
+                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab1" data-toggle="pill" href="#v-pills1" role="tab" aria-controls="v-pills1" aria-selected="false">Choix de la matière</a>
                                         <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab2" data-toggle="pill" href="#v-pills2" role="tab" aria-controls="v-pills2" aria-selected="false">Forme du vêtement</a>
                                         <a class="btn-outline-danger rounded m-2 p-2" id="v-pills-tab3" data-toggle="pill" href="#v-pills3" role="tab" aria-controls="v-pills3" aria-selected="true">Mensurations</a>
                                         <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab4" data-toggle="pill" href="#v-pills4" role="tab" aria-controls="v-pills4" aria-selected="false">Couleur</a>
@@ -110,9 +112,9 @@
                                 </div>
                                 <div class="col-9">
                                     <div class="tab-content ml-5 p-2" id="v-pills-tabContent">
-                                        <div class="tab-pane fade show active" id="v-pills0" role="tabpanel" aria-labelledby="v-pills0">
+                                        <div class="tab-pane fade show active" id="v-pills0" role="tabpanel" aria-labelledby="v-pills1">
                                             <div class="m-5">
-                                                <label class="h4">Choix du vêtement</label>
+                                                <label class="h4">Type du vêtement</label>
                                                 <select class="form-control mt-4" required>
                                                     <option>Tee-shirt</option>
                                                     <option>Costume</option>
@@ -129,15 +131,18 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="v-pills1" role="tabpanel" aria-labelledby="v-pills1">
+                                        <div class="tab-pane fade" id="v-pills1" role="tabpanel" aria-labelledby="v-pills0">
                                             <div class="m-5">
-                                                <label class="h4">Type du vêtement</label>
-                                                <select class="form-control mt-4">
-                                                    <option>Bas de vêtement</option>
-                                                    <option>Costume</option>
-                                                    <option>Gant</option>
-                                                    <option>Haut de vêtement</option>
-                                                    <option>Vêtement une pièce</option>
+                                                <label class="h4">Choix de la matière</label>
+                                                <select class="form-control mt-4" required>
+                                                    <option>Coton</option>
+                                                    <option>Cuir</option>
+                                                    <option>Lin</option>
+                                                    <option>Toile</option>
+                                                    <option>Laine</option>
+                                                    <option>Polyester</option>
+                                                    <option>Viscose</option>
+                                                    <option>Lyocell</option>
                                                 </select>
                                             </div>
                                         </div>
