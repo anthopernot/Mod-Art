@@ -104,10 +104,20 @@ h2 p {
 
 }
 
+.logoDesign {
+    width: 40%;
+    height: 40%;
+}
+
 .artDDCustom {
 
     padding-left: 200px;
 
+}
+
+.textLorem {
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .carouselCustom {
