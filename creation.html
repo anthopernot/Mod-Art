@@ -26,7 +26,7 @@
                             <a class="nav-link text-danger" href="#"> <i class="fas fa-portrait"></i> Nous connaître</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-danger" href="#"> <i class="fas fa-cut"></i> Notre savoir-faire</a>
+                            <a class="nav-link text-danger" href="savoirFaire.html"> <i class="fas fa-cut"></i> Notre savoir-faire</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-danger" href="creation.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -101,13 +101,12 @@
                             <div class="row btn-light ml-2 rounded">
                                 <div class="col-3 ">
                                     <div class="nav flex-column nav-pills p-2 m-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-
-                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab0" data-toggle="pill" href="#v-pills0" role="tab" aria-controls="v-pills0" aria-selected="false">Type de vêtement</a>
-                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab1" data-toggle="pill" href="#v-pills1" role="tab" aria-controls="v-pills1" aria-selected="false">Choix de la matière</a>
-                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab2" data-toggle="pill" href="#v-pills2" role="tab" aria-controls="v-pills2" aria-selected="false">Forme du vêtement</a>
-                                        <a class="btn-outline-danger rounded m-2 p-2" id="v-pills-tab3" data-toggle="pill" href="#v-pills3" role="tab" aria-controls="v-pills3" aria-selected="true">Mensurations</a>
-                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab4" data-toggle="pill" href="#v-pills4" role="tab" aria-controls="v-pills4" aria-selected="false">Couleur</a>
-                                        <a class="btn-outline-danger rounded m-2 p-1" id="v-pills-tab5" data-toggle="pill" href="#v-pills5" role="tab" aria-controls="v-pills5" aria-selected="false">Motif</a>
+                                        <a class="text-decoration-none" id="v-pills-tab0" data-toggle="pill" href="#v-pills0" role="tab" aria-controls="v-pills0" aria-selected="false"><p class="btn-outline-danger rounded m-2 p-1">Type de vêtement</p></a>
+                                        <a class="text-decoration-none" id="v-pills-tab1" data-toggle="pill" href="#v-pills1" role="tab" aria-controls="v-pills1" aria-selected="false"><p class="btn-outline-danger rounded m-2 p-1">Choix de la matière</p></a>
+                                        <a class="text-decoration-none" id="v-pills-tab2" data-toggle="pill" href="#v-pills2" role="tab" aria-controls="v-pills2" aria-selected="false"><p class="btn-outline-danger rounded m-2 p-1">Forme du vêtement</p></a>
+                                        <a class="text-decoration-none" id="v-pills-tab3" data-toggle="pill" href="#v-pills3" role="tab" aria-controls="v-pills3" aria-selected="true"><p class="btn-outline-danger rounded m-2 p-2">Mensurations</p></a>
+                                        <a class="text-decoration-none" id="v-pills-tab4" data-toggle="pill" href="#v-pills4" role="tab" aria-controls="v-pills4" aria-selected="false"><p class="btn-outline-danger rounded m-2 p-1">Couleur</p></a>
+                                        <a class="text-decoration-none" id="v-pills-tab5" data-toggle="pill" href="#v-pills5" role="tab" aria-controls="v-pills5" aria-selected="false"><p class="btn-outline-danger rounded m-2 p-1">Motif</p></a>
                                     </div>
                                 </div>
                                 <div class="col-9">
@@ -115,7 +114,7 @@
                                         <div class="tab-pane fade show active" id="v-pills0" role="tabpanel" aria-labelledby="v-pills1">
                                             <div class="m-5">
                                                 <label class="h4">Type du vêtement</label>
-                                                <select class="form-control mt-4" required>
+                                                <select class="form-control mt-4" id="selectTypeVet" required>
                                                     <option>Tee-shirt</option>
                                                     <option>Costume</option>
                                                     <option>Polo</option>
@@ -134,7 +133,7 @@
                                         <div class="tab-pane fade" id="v-pills1" role="tabpanel" aria-labelledby="v-pills0">
                                             <div class="m-5">
                                                 <label class="h4">Choix de la matière</label>
-                                                <select class="form-control mt-4" required>
+                                                <select class="form-control mt-4" id="selectChoixMat" required>
                                                     <option>Coton</option>
                                                     <option>Cuir</option>
                                                     <option>Lin</option>
@@ -149,7 +148,7 @@
                                         <div class="tab-pane fade" id="v-pills2" role="tabpanel" aria-labelledby="v-pills1">
                                             <div class="m-5">
                                                 <label class="h4">Forme du vêtement</label>
-                                                <select class="form-control mt-4">
+                                                <select class="form-control mt-4" id="selectFormeVet" required>
                                                     <option>Je ne sais pas quoi mettre</option>
                                                     <option>Ma foi</option>
                                                     <option>Bonne journée à vous</option>
@@ -163,7 +162,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 mr-3 col-form-label">Taille</label>
                                                     <div class="col-sm-10">
-                                                        <select class="form-control mt-4 mb-2">
+                                                        <select class="form-control mt-4 mb-2" id="selectTailleVet" required>
                                                             <option>XS</option>
                                                             <option>S</option>
                                                             <option>M</option>
@@ -174,15 +173,15 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label for="input1" class="col-sm-6 mr-3 col-form-label">Taille de hanche</label>
+                                                    <label for="inputTailleHanche" class="col-sm-6 mr-3 col-form-label">Taille de hanche</label>
                                                     <div class="col-sm-10">
-                                                        <input type="number" class="form-control" id="input1">
+                                                        <input type="number" class="form-control" id="inputTailleHanche" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label for="input2" class="col-sm-6 mr-3 col-form-label">Taille de jambe</label>
+                                                    <label for="inputTailleJambe" class="col-sm-6 mr-3 col-form-label">Taille de jambe</label>
                                                     <div class="col-sm-10">
-                                                        <input type="number" class="form-control" id="input2">
+                                                        <input type="number" class="form-control" id="inputTailleJambe" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -190,7 +189,7 @@
                                         <div class="tab-pane fade" id="v-pills4" role="tabpanel" aria-labelledby="v-pills1">
                                             <div class="m-5">
                                                 <label class="h4">Couleur</label>
-                                                <select class="form-control mt-4">
+                                                <select class="form-control mt-4" id="selectCouleurVet" required>
                                                     <option>Blanc</option>
                                                     <option>Noir</option>
                                                     <option>Rouge</option>
@@ -209,7 +208,7 @@
                                         <div class="tab-pane fade" id="v-pills5" role="tabpanel" aria-labelledby="v-pills1">
                                             <div class="m-5">
                                                 <label class="h4">Motif</label>
-                                                <select class="form-control mt-4">
+                                                <select class="form-control mt-4" id="selectMotifVet" required>
                                                     <option>Fleur</option>
                                                     <option>Point</option>
                                                     <option>Cercle</option>
@@ -246,18 +245,64 @@
 
                 <div class="container">
 
-                    <div class="col-sm-12 mx-auto text-dark mt-5 mb-5">
+                    <div class="col-12 text-dark mt-5 mb-5">
 
-                        <p class="h4 mb-3"> Choix du vêtement :  </p>
-                        <p class="h4 mb-3"> Type du vêtement :  </p>
-                        <p class="h4 mb-3"> Forme du vêtement :  </p>
-                        <p class="h4 mb-3"> Mensurations :
-                        <li class="h5 ml-5 mb-4 mt-2"> Taille  :  </li>
-                        <li class="h5 ml-5 mb-4"> Taille de hanche :  </li>
-                        <li class="h5 ml-5 mb-2"> Taille de jambe :  </li>
-                        </p>
-                        <p class="h4 mb-3 mt-4=3"> Couleur du vêtement :  </p>
-                        <p class="h4 mb-3"> Motif apparaissant sur le vêtement :  </p>
+                        <table class="table table-borderless text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="col"><p class="h3">Type du vêtement :</p> </th>
+                                    <th scope="col"><p class="h5 text-danger" id="typeVet"></p></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"><p class="h3">Choix de la matière :</p> </th>
+                                    <th scope="col"><p class="h5 text-danger" id="choixMat"></p></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"><p class="h3">Forme du vêtement :</p> </th>
+                                    <th scope="col"><p class="h5 text-danger" id="formeVet"></p></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"><p class="h3">Mensurations :</p> </th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"><p class="h5 ml-2">Taille standard</p></th>
+                                    <th scope="col"><p class="h5 text-danger" id="taille"></p></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"><p class="h5 ml-2">Taille de Hanche</p></th>
+                                    <th scope="col"><div class="h5 text-danger"><div id="tailleHanche"></div></div></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"><p class="h5 ml-2">Taille de Jambe</p></th>
+                                    <th scope="col"><div class="h5 text-danger"><div id="tailleJambe"></div></div></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"><p class="h3">Couleur :</p> </th>
+                                    <th scope="col"><p class="h5 text-danger" id="couleur"></p></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"><p class="h3">Motif apparaissant sur le vêtement :</p> </th>
+                                    <th scope="col"><p class="h5 text-danger" id="motif"></p></th>
+                                </tr>
+                            </tbody>
+                        </table>
 
                     </div>
 
@@ -319,6 +364,7 @@
 
         </main>
 
+        <script src="assets/js/creation.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
