@@ -109,6 +109,11 @@ h2 p {
     height: 40%;
 }
 
+.avatarDesign {
+    width: 200px;
+    height: 200px;
+}
+
 .artDDCustom {
 
     padding-left: 200px;
