@@ -121,8 +121,7 @@ h2 p {
 }
 
 .textLorem {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 5%;
 }
 
 .carouselCustom {
