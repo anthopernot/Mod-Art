@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/405a7a03eb.js" crossorigin="anonymous"></script>
-    <title> Panier - Mod'Art</title>
+    <title> Compte - Mod'Art</title>
 </head>
 <body>
 
@@ -76,7 +76,7 @@
 
         <div class="col-sm-10 mx-auto text-center pt-5">
 
-            <h1 class="text-center text-danger display-2">Panier</h1>
+            <h1 class="text-center text-danger display-2">Votre compte</h1>
 
         </div>
 
@@ -88,90 +88,120 @@
 
         <div class="container">
 
-            <div class="row btn-danger p-3 mt-5 mb-5 shadow-lg rounded">
+            <div class="row btn-danger p-4 mt-5 mb-5 shadow-lg rounded">
 
-                <div class="col-sm-8 mx-auto m-1">
+                <div class="col-sm-12 mx-auto m-2">
 
-                    <div class="row btn-light ml-2 rounded">
+                    <div class="row btn-light rounded">
                         <div class="col-12 p-4">
 
-                            <p class="h2 text-center text-danger mx-auto ">Contenu </p>
+                            <p class="h1 text-center text-danger mx-auto">Informations </p>
+
+                            <div class="barreHorizo2 mt-2"></div>
+
+                            <form class="m-5">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6 h4">
+                                        <label for="inputEmail4">Nom</label>
+                                        <input type="text" class="form-control" id="inputEmail4" value="PERNOT" disabled>
+                                    </div>
+                                    <div class="form-group col-md-6 h4">
+                                        <label for="inputPassword4">Prénom</label>
+                                        <input type="text" class="form-control" id="inputPassword4" value="Anthony" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-row h4">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputBirthDay">Date de naissance</label>
+                                        <input type="text" class="form-control" id="inputBirthDay" value="28/03/2000" disabled>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputBigo">Numéro de téléphone</label>
+                                        <input type="text" class="form-control" id="inputBigo" value="08 54 11 46 87" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group h4">
+                                    <label for="inputAddress">Nom de rue</label>
+                                    <input type="text" class="form-control" id="inputAddress" value="2TER Boulevard Charlemagne" disabled>
+                                </div>
+                                <div class="form-row h4">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity">Ville</label>
+                                        <input type="text" class="form-control" id="inputCity" value="Nancy" disabled>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">Code Postal</label>
+                                        <input type="text" class="form-control" id="inputState" value="54 000" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group h4">
+                                    <label for="inputAddressMail">Adresse mail</label>
+                                    <input type="text" class="form-control" id="inputAddressMail" value="website@totoprnt.fr" disabled>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-8 mx-auto m-4">
+
+                    <div class="row btn-light rounded">
+                        <div class="col-12 p-4" id="divCommande">
+
+                            <p class="h2 text-center text-danger mx-auto ">Commandes passées </p>
 
                             <div class="barreHorizo2 mt-2"></div>
 
                             <div class="media mt-4 shadow-sm p-2">
-                                <img src="assets/img/create2.jpg" class="mr-3 imgBasket" alt="...">
                                 <div class="media-body">
-                                    <h5 class="mt-0">Article</h5>
+                                    <h3 class="mt-0">Commande #4</h3>
+                                    <h4 class="mt-0 text-danger">Date : 04/04/2020</h4>
                                     <div class="row">
                                         <div class="col-5">
-                                            <p class="h5 text-danger text-left">Prix: </p>
+                                            <p class="h4 text-danger text-left">Prix: </p>
                                         </div>
                                         <div class="col-7">
-                                            <p class="h5 text-right text-danger">133.4€ </p>
+                                            <p class="h3 text-right text-danger">672 € </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="media mt-4 shadow-sm p-2">
-                                <img src="assets/img/create2.jpg" class="mr-3 imgBasket" alt="...">
                                 <div class="media-body">
-                                    <h5 class="mt-0">Article</h5>
+                                    <h3 class="mt-0">Commande #3</h3>
+                                    <h4 class="mt-0 text-danger">Date : 17/03/2020</h4>
                                     <div class="row">
                                         <div class="col-5">
-                                            <p class="h5 text-danger text-left">Prix: </p>
+                                            <p class="h4 text-danger text-left">Prix: </p>
                                         </div>
                                         <div class="col-7">
-                                            <p class="h5 text-right text-danger">133.4€ </p>
+                                            <p class="h3 text-right text-danger">244 € </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="media mt-4 shadow-sm p-2">
-                                <img src="assets/img/create2.jpg" class="mr-3 imgBasket" alt="...">
                                 <div class="media-body">
-                                    <h5 class="mt-0">Article</h5>
+                                    <h3 class="mt-0">Commande #2</h3>
+                                    <h4 class="mt-0 text-danger">Date : 09/01/2020</h4>
                                     <div class="row">
                                         <div class="col-5">
-                                            <p class="h5 text-danger text-left">Prix: </p>
+                                            <p class="h4 text-danger text-left">Prix: </p>
                                         </div>
                                         <div class="col-7">
-                                            <p class="h5 text-right text-danger">133.4€ </p>
+                                            <p class="h3 text-right text-danger">375 € </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="media mt-4 shadow-sm p-2">
-                                <img src="assets/img/create2.jpg" class="mr-3 imgBasket" alt="...">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Article</h5>
-                                    <div class="row">
-                                        <div class="col-5">
-                                            <p class="h5 text-danger text-left">Prix: </p>
-                                        </div>
-                                        <div class="col-7">
-                                            <p class="h5 text-right text-danger">133.4€ </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="media mt-4 shadow-sm p-2">
-                                <img src="assets/img/create2.jpg" class="mr-3 imgBasket" alt="...">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Article</h5>
-                                    <div class="row">
-                                        <div class="col-5">
-                                            <p class="h5 text-danger text-left">Prix: </p>
-                                        </div>
-                                        <div class="col-7">
-                                            <p class="h5 text-right text-danger">133.4€ </p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="text-right mt-4" id="viewAll">
+                                <button type="button" class="btn btn-danger pl-5 pr-5" id="buttonView"><p class="h5" id="viewText">Tout voir</p></button>
                             </div>
 
                         </div>
@@ -180,52 +210,20 @@
 
                 </div>
 
-                <div class="col-sm-4 mx-auto text-center m-1">
+                <div class="col-sm-4 mx-auto text-center m-4">
 
                     <div class="row btn-light ml-2 rounded">
                         <div class="col-12 p-4">
 
-                                <p class="h2 text-center text-danger mx-auto ">Total</p>
+                            <p class="h2 text-center text-danger mx-auto ">Actions</p>
 
-                                <div class="barreHorizo2 mt-2"></div>
+                            <div class="barreHorizo2 mt-2"></div>
 
-                                <div class="row mt-5 pt-5">
+                            <button type="button" class="btn btn-info btn-lg btn-block mt-4 pt-2"><i class="fas fa-credit-card mr-1"></i> Ajouter un moyen de paiement</button>
 
-                                    <div class="col-5">
-                                        <p class="h5 text-danger text-left">Prix: </p>
-                                    </div>
+                            <button type="button" class="btn btn-info btn-lg btn-block pt-2"><i class="fas fa-user-edit mr-1"></i> Modifier mes informations</button>
 
-                                    <div class="col-7">
-                                        <p class="h5 text-right text-danger">667€ </p>
-                                    </div>
-
-                                </div>
-
-                                <div class="row mt-2">
-
-                                    <div class="col-5">
-                                        <p class="h5 text-danger text-left">Livraison: </p>
-                                    </div>
-
-                                    <div class="col-7">
-                                        <p class="h5 text-right text-danger">5€ </p>
-                                    </div>
-
-                                </div>
-
-                                <div class="row mt-2 pb-3">
-
-                                    <div class="col-5">
-                                        <p class="h5 text-danger text-left">Total: </p>
-                                    </div>
-
-                                    <div class="col-7">
-                                        <p class="h5 text-right text-danger">672€ </p>
-                                    </div>
-
-                                </div>
-
-                                <button type="button" class="btn btn-danger btn-lg btn-block mt-5 pt-2"><i class="fas fa-credit-card"></i> Payer</button>
+                            <button type="button" class="btn btn-info btn-lg btn-block pt-2"><i class="fas fa-lock mr-1"></i> Changer mon mot de passe</button>
 
                         </div>
 
@@ -236,29 +234,6 @@
             </div>
 
         </div>
-
-        <div class="col-sm-10 mx-auto text-center pt-5">
-
-            <h1 class="text-center text-danger display-3">Informations sur la livraison</h1>
-
-        </div>
-
-        <div class="col-sm-12 mt-4 pb-4">
-
-            <div class="barreHorizo mx-auto"></div>
-
-        </div>
-
-        <div class="col-5 mx-auto">
-
-            <p class="h5 text-center text-danger mt-5 mb-5 pb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis scelerisque pellentesque lacinia. Suspendisse dignissim tempor justo. Suspendisse eu mattis felis, a commodo turpis. Donec posuere urna felis, sit amet varius mi semper at. Sed in faucibus mauris, sed aliquam nunc. Donec id lacus vitae nulla accumsan facilisis. Sed blandit odio sit amet magna luctus ultricies. Proin aliquet sit amet est id volutpat. Suspendisse vulputate luctus interdum. Donec fermentum sed mauris a pulvinar.
-
-                Nulla pellentesque felis id sem efficitur sodales. Nullam sit amet malesuada ex. Nulla interdum laoreet euismod. Morbi dapibus finibus mattis. In porttitor et est quis placerat. Aliquam egestas pulvinar malesuada. Curabitur vitae tortor a lectus convallis fermentum. Aliquam erat volutpat. Quisque tincidunt erat malesuada urna feugiat tincidunt. Phasellus elementum velit a arcu malesuada imperdiet. Cras eu lacus ultricies risus tempus accumsan.
-            </p>
-
-        </div>
-
 
         <div class="footerCustom">
 
@@ -300,6 +275,7 @@
 
 </main>
 
+<script src="assets/js/account.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
